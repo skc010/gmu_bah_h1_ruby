@@ -19,3 +19,14 @@ def histogram(a_string)
 	hist
 
 end
+
+def sum_only_numbers(an_array)
+	sum = 0
+	an_array.each{|value| 
+		if value.is_a? Numeric
+			sum += value
+		end
+	}
+
+	sum
+end
