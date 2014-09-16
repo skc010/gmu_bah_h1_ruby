@@ -30,3 +30,21 @@ def sum_only_numbers(an_array)
 
 	sum
 end
+
+def fizzbuzz
+	arr = []
+	for count in 1..100
+		if(count % 5 == 0 && count %3 == 0)
+			arr[count] = 'fizzbuzz'
+		elsif(count % 5 == 0)
+			arr[count] = 'buzz'
+		elsif (count % 3 == 0)
+			arr[count] = 'fizz'
+		else
+			arr[count] = count
+		end
+	end
+
+	arr
+
+end
